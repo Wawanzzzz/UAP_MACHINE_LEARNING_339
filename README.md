@@ -118,7 +118,7 @@ dari root project:
 
 ```bash
 python -m pdm run streamlit run src/app.py
-
+```
 ---
 
 ## Note
@@ -126,3 +126,4 @@ Dikarenakan terdapat kendala pada vs code saya, sehingga tidak bisa push github 
 
 ```bash
 https://drive.google.com/drive/folders/1dNgbLvTf1p8bEUbVHHd8JlWyBJKnWn7S?usp=sharing
+```
