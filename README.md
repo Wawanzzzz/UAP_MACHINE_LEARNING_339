@@ -53,15 +53,52 @@ Model Convolutional Neural Network yang dibangun dan dilatih dari awal tanpa men
 bobot pretrained. Model ini digunakan sebagai **baseline** untuk melihat kemampuan model
 sederhana dalam mengklasifikasikan outfit.
 
+## Classification Report
+
+| Class | Precision | Recall | F1-Score | Support |
+|------|-----------|--------|----------|---------|
+| Biasa | 0.95 | 0.93 | 0.94 | 480 |
+| Skena | 0.93 | 0.95 | 0.94 | 452 |
+| **Accuracy** |  |  | **0.94** | 932 |
+| **Macro Avg** | 0.94 | 0.94 | 0.94 | 932 |
+| **Weighted Avg** | 0.94 | 0.94 | 0.94 | 932 |
+
+## Hasil Evaluasi
+![Confusion Matrix](cnn.png)
+
 ### 2. MobileNetV2 (Transfer Learning)
 Model pretrained MobileNetV2 digunakan dengan pendekatan *transfer learning*.
 Layer feature extractor dibekukan (*freeze*), dan hanya layer classifier yang dilatih ulang
 untuk menyesuaikan dengan jumlah kelas.
 
+## Classification Report (MobileNet)
+
+| Class | Precision | Recall | F1-Score | Support |
+|------|-----------|--------|----------|---------|
+| Biasa | 0.96 | 0.90 | 0.93 | 480 |
+| Skena | 0.90 | 0.96 | 0.93 | 452 |
+| **Accuracy** |  |  | **0.93** | 932 |
+| **Macro Avg** | 0.93 | 0.93 | 0.93 | 932 |
+| **Weighted Avg** | 0.93 | 0.93 | 0.93 | 932 |
+
+## Hasil Evaluasi
+![Confusion Matrix](mobilenet.png)
+
 ### 3. EfficientNet-B0 (Transfer Learning)
 EfficientNet-B0 digunakan sebagai model pretrained kedua. Model ini memiliki arsitektur yang
 lebih optimal dalam menyeimbangkan kompleksitas dan performa, sehingga diharapkan memberikan
 hasil klasifikasi yang lebih baik.
+
+## Classification Report (EfficientNet)
+
+| Class | Precision | Recall | F1-Score | Support |
+|------|-----------|--------|----------|---------|
+| Biasa | 0.97 | 0.95 | 0.96 | 480 |
+| Skena | 0.94 | 0.97 | 0.96 | 452 |
+| **Accuracy** |  |  | **0.96** | 932 |
+| **Macro Avg** | 0.96 | 0.96 | 0.96 | 932 |
+| **Weighted Avg** | 0.96 | 0.96 | 0.96 | 932 |
+
 
 ---
 
