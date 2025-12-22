@@ -118,3 +118,11 @@ dari root project:
 
 ```bash
 python -m pdm run streamlit run src/app.py
+
+---
+
+## Note
+Dikarenakan terdapat kendala pada vs code saya, sehingga tidak bisa push github dengan baik, jadi saya melakukan push secara manual dengan cara upload file satu persatu. Dibawah ini adalah link Drive dari dataset saya:
+
+```bash
+https://drive.google.com/drive/folders/1dNgbLvTf1p8bEUbVHHd8JlWyBJKnWn7S?usp=sharing
